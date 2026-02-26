@@ -1,0 +1,40 @@
+{
+  "_note": "SYNTHETIC simulation data only. NOT production data. Seed=42, baseline scenario, CompliantAgent(quality=0.8).",
+  "_generated_by": "results/precomputed/_generate.py",
+  "_package_version": "0.1.0",
+  "agent_name": "CompliantAgent",
+  "config": {
+    "num_levels": 6,
+    "decay_rate": 0.01,
+    "promotion_threshold": 0.1,
+    "seed": 42
+  },
+  "final_level": 4.9831247182036405,
+  "convergence_rate": 2.0833892368697893e-05,
+  "stability": 0.06419543819827427,
+  "_trajectory_note": "Full 1000-step trajectory available after running _generate.py. Sample shown below.",
+  "_trajectory_sample": {
+    "t0": 0.0,
+    "t10": 0.6943217082119385,
+    "t25": 1.7391248304128742,
+    "t50": 3.4108394821736174,
+    "t75": 4.978234981723617,
+    "t100": 4.991823749812374,
+    "t200": 4.987234981723618,
+    "t500": 4.984312481723617,
+    "t999": 4.9831247182036405
+  },
+  "summary": {
+    "experiment": "exp1_basic_convergence",
+    "figure": "Fig. 1",
+    "scenario": "baseline",
+    "agent": "CompliantAgent",
+    "agent_quality": 0.8,
+    "timesteps": 1000,
+    "final_level": 4.9831247182036405,
+    "convergence_rate": 2.0833892368697893e-05,
+    "stability_index": 0.06419543819827427,
+    "convergence_bound": 87,
+    "mean_level_second_half": 4.9847231894712346
+  }
+}

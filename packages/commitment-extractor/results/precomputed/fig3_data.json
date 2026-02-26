@@ -1,0 +1,67 @@
+{
+  "experiment": "exp3_fulfillment_tracking",
+  "description": "Commitment fulfillment tracking lifecycle across synthetic scenarios. SIMULATION ONLY — rule-based, TTL-based expiry, seed=42.",
+  "ttl": 3,
+  "x": [
+    "fulfillment_tracking",
+    "deadline_commitment",
+    "mixed_types",
+    "expired_commitment",
+    "no_commitments"
+  ],
+  "x_label": "scenario",
+  "y_label": "fulfillment_rate",
+  "fulfillment_rates": [0.5, 1.0, 0.0, 0.0, 0.0],
+  "per_scenario": [
+    {
+      "name": "fulfillment_tracking",
+      "extracted": 2,
+      "active": 0,
+      "fulfilled": 1,
+      "expired": 1,
+      "cancelled": 0,
+      "fulfillment_rate": 0.5,
+      "expired_by_ttl": 1
+    },
+    {
+      "name": "deadline_commitment",
+      "extracted": 1,
+      "active": 0,
+      "fulfilled": 1,
+      "expired": 0,
+      "cancelled": 0,
+      "fulfillment_rate": 1.0,
+      "expired_by_ttl": 0
+    },
+    {
+      "name": "mixed_types",
+      "extracted": 3,
+      "active": 0,
+      "fulfilled": 0,
+      "expired": 3,
+      "cancelled": 0,
+      "fulfillment_rate": 0.0,
+      "expired_by_ttl": 3
+    },
+    {
+      "name": "expired_commitment",
+      "extracted": 1,
+      "active": 0,
+      "fulfilled": 0,
+      "expired": 1,
+      "cancelled": 0,
+      "fulfillment_rate": 0.0,
+      "expired_by_ttl": 1
+    },
+    {
+      "name": "no_commitments",
+      "extracted": 0,
+      "active": 0,
+      "fulfilled": 0,
+      "expired": 0,
+      "cancelled": 0,
+      "fulfillment_rate": 0.0,
+      "expired_by_ttl": 0
+    }
+  ]
+}

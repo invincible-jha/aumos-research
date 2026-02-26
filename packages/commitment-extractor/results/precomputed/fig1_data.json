@@ -1,0 +1,76 @@
+{
+  "experiment": "exp1_basic_extraction",
+  "description": "Basic commitment extraction from synthetic conversations. SIMULATION ONLY — rule-based regex, seed=42.",
+  "x": [
+    "simple_promise", "obligation_chain", "deadline_commitment",
+    "conditional_commitment", "offer_acceptance", "mixed_types",
+    "fulfillment_tracking", "expired_commitment", "no_commitments"
+  ],
+  "x_label": "scenario",
+  "y_label": "commitment_count",
+  "extracted_counts": [1, 2, 1, 1, 1, 3, 2, 1, 0],
+  "ground_truth_counts": [1, 2, 1, 1, 1, 3, 2, 1, 0],
+  "type_distribution": {
+    "promise": 7,
+    "obligation": 2,
+    "deadline": 0,
+    "conditional": 1,
+    "offer": 1
+  },
+  "per_scenario": [
+    {
+      "name": "simple_promise",
+      "ground_truth": 1,
+      "extracted": 1,
+      "type_breakdown": {"promise": 1, "obligation": 0, "deadline": 0, "conditional": 0, "offer": 0}
+    },
+    {
+      "name": "obligation_chain",
+      "ground_truth": 2,
+      "extracted": 2,
+      "type_breakdown": {"promise": 0, "obligation": 2, "deadline": 0, "conditional": 0, "offer": 0}
+    },
+    {
+      "name": "deadline_commitment",
+      "ground_truth": 1,
+      "extracted": 1,
+      "type_breakdown": {"promise": 1, "obligation": 0, "deadline": 0, "conditional": 0, "offer": 0}
+    },
+    {
+      "name": "conditional_commitment",
+      "ground_truth": 1,
+      "extracted": 1,
+      "type_breakdown": {"promise": 0, "obligation": 0, "deadline": 0, "conditional": 1, "offer": 0}
+    },
+    {
+      "name": "offer_acceptance",
+      "ground_truth": 1,
+      "extracted": 1,
+      "type_breakdown": {"promise": 0, "obligation": 0, "deadline": 0, "conditional": 0, "offer": 1}
+    },
+    {
+      "name": "mixed_types",
+      "ground_truth": 3,
+      "extracted": 3,
+      "type_breakdown": {"promise": 1, "obligation": 1, "deadline": 0, "conditional": 1, "offer": 0}
+    },
+    {
+      "name": "fulfillment_tracking",
+      "ground_truth": 2,
+      "extracted": 2,
+      "type_breakdown": {"promise": 2, "obligation": 0, "deadline": 0, "conditional": 0, "offer": 0}
+    },
+    {
+      "name": "expired_commitment",
+      "ground_truth": 1,
+      "extracted": 1,
+      "type_breakdown": {"promise": 1, "obligation": 0, "deadline": 0, "conditional": 0, "offer": 0}
+    },
+    {
+      "name": "no_commitments",
+      "ground_truth": 0,
+      "extracted": 0,
+      "type_breakdown": {"promise": 0, "obligation": 0, "deadline": 0, "conditional": 0, "offer": 0}
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the associated paper."
+title: "Delegation Trust Model: Trust Dynamics in Agent Delegation Chains"
+abstract: >
+  Research companion code for Paper 18. Provides a simplified simulation of
+  trust propagation across multi-agent delegation chains, including transitive
+  trust computation via multiplicative decay, hop-based analysis, and topology
+  comparisons. All data is synthetic. This is NOT a production implementation.
+authors:
+  - family-names: "MuVeraAI Research"
+type: software
+version: "0.1.0"
+date-released: "2026-02-26"
+license: MIT
+repository-code: "https://github.com/aumos-ai/aumos-research"
+url: "https://github.com/aumos-ai/aumos-research/tree/main/packages/delegation-trust-model"
+keywords:
+  - delegation
+  - trust dynamics
+  - multi-agent systems
+  - transitive trust
+  - simulation
+  - research
+  - agent governance

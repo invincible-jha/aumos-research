@@ -1,0 +1,50 @@
+{
+  "experiment": "exp3_action_space_analysis",
+  "description": "Action space size vs trust level across all domains. SIMULATION ONLY — forward BFS, synthetic data.",
+  "trust_levels": [0, 1, 2, 3, 4, 5],
+  "domain_names": ["linear_pipeline", "branching", "tiered_access", "high_restriction"],
+  "min_trust_thresholds": [0, 0, 0, 0],
+  "total_action_counts": [8, 10, 12, 10],
+  "results_by_domain": [
+    {
+      "domain": "linear_pipeline",
+      "total_actions": 8,
+      "goal_id": "lp-g1",
+      "trust_levels": [0, 1, 2, 3, 4, 5],
+      "action_counts": [4, 4, 5, 6, 7, 8],
+      "fractions": [0.5, 0.5, 0.625, 0.75, 0.875, 1.0],
+      "reachability": [true, true, true, true, true, true],
+      "min_trust_for_reachability": 0
+    },
+    {
+      "domain": "branching",
+      "total_actions": 10,
+      "goal_id": "br-g1",
+      "trust_levels": [0, 1, 2, 3, 4, 5],
+      "action_counts": [4, 4, 6, 7, 9, 10],
+      "fractions": [0.4, 0.4, 0.6, 0.7, 0.9, 1.0],
+      "reachability": [true, true, true, true, true, true],
+      "min_trust_for_reachability": 0
+    },
+    {
+      "domain": "tiered_access",
+      "total_actions": 12,
+      "goal_id": "ta-g1",
+      "trust_levels": [0, 1, 2, 3, 4, 5],
+      "action_counts": [6, 6, 8, 8, 10, 12],
+      "fractions": [0.5, 0.5, 0.666667, 0.666667, 0.833333, 1.0],
+      "reachability": [true, true, true, true, true, true],
+      "min_trust_for_reachability": 0
+    },
+    {
+      "domain": "high_restriction",
+      "total_actions": 10,
+      "goal_id": "hr-g1",
+      "trust_levels": [0, 1, 2, 3, 4, 5],
+      "action_counts": [3, 4, 5, 7, 8, 10],
+      "fractions": [0.3, 0.4, 0.5, 0.7, 0.8, 1.0],
+      "reachability": [true, true, true, true, true, true],
+      "min_trust_for_reachability": 0
+    }
+  ]
+}

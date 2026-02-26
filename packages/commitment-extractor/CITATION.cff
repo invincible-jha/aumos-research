@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the associated paper."
+title: "Commitment Extractor: Extracting and Tracking Commitments from Agent Communications"
+abstract: >
+  Research companion code for Paper 21. Provides a simplified rule-based
+  simulation of commitment extraction from agent message streams, including
+  promise detection, obligation classification, deadline parsing, and
+  fulfillment lifecycle tracking. All data is synthetic. This is NOT a
+  production implementation.
+authors:
+  - family-names: "MuVeraAI Research"
+type: software
+version: "0.1.0"
+date-released: "2026-02-26"
+license: MIT
+repository-code: "https://github.com/aumos-ai/aumos-research"
+url: "https://github.com/aumos-ai/aumos-research/tree/main/packages/commitment-extractor"
+keywords:
+  - commitment extraction
+  - agent communication
+  - natural language processing
+  - obligation tracking
+  - simulation
+  - research
+  - multi-agent systems

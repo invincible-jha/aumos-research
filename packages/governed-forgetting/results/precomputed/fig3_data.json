@@ -1,0 +1,11 @@
+{
+  "_note": "SIMULATION ONLY — not production AMGP implementation. Run results/precomputed/generate.py to populate with seed=42 data.",
+  "scenario": "consent_revocation",
+  "seed": 42,
+  "n_owners": 10,
+  "revocation_timesteps": [100, 200, 300],
+  "n_memories": 500,
+  "timesteps": 500,
+  "retention_rate": null,
+  "history": []
+}

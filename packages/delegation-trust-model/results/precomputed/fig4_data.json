@@ -1,0 +1,83 @@
+{
+  "experiment": "exp4_network_topology",
+  "description": "Network topology comparison: linear, tree, mesh. SIMULATION ONLY — synthetic data, seed=42.",
+  "scenario_labels": [
+    "Linear (4 agents)",
+    "Linear (8 agents)",
+    "Tree (depth=2, branch=2)",
+    "Tree (depth=3, branch=2)",
+    "Mesh (5 agents)",
+    "Mesh (7 agents)"
+  ],
+  "terminal_trusts": [0.728042, 0.374695, 0.774121, 0.589234, 0.880321, 0.863452],
+  "path_lengths": [3, 7, 2, 3, 1, 1],
+  "mean_pair_trusts": [0.487291, 0.261384, 0.623847, 0.512903, 0.854623, 0.841276],
+  "topology_results": [
+    {
+      "name": "linear_4",
+      "label": "Linear (4 agents)",
+      "terminal_trust": 0.728042,
+      "path_length": 3,
+      "mean_pair_trust": 0.487291,
+      "std_pair_trust": 0.198432,
+      "reachable_pairs": 6,
+      "total_pairs": 12,
+      "max_depth": 3
+    },
+    {
+      "name": "linear_8",
+      "label": "Linear (8 agents)",
+      "terminal_trust": 0.374695,
+      "path_length": 7,
+      "mean_pair_trust": 0.261384,
+      "std_pair_trust": 0.213045,
+      "reachable_pairs": 28,
+      "total_pairs": 56,
+      "max_depth": 7
+    },
+    {
+      "name": "tree_d2_b2",
+      "label": "Tree (depth=2, branch=2)",
+      "terminal_trust": 0.774121,
+      "path_length": 2,
+      "mean_pair_trust": 0.623847,
+      "std_pair_trust": 0.241362,
+      "reachable_pairs": 6,
+      "total_pairs": 12,
+      "max_depth": 2
+    },
+    {
+      "name": "tree_d3_b2",
+      "label": "Tree (depth=3, branch=2)",
+      "terminal_trust": 0.589234,
+      "path_length": 3,
+      "mean_pair_trust": 0.512903,
+      "std_pair_trust": 0.253814,
+      "reachable_pairs": 28,
+      "total_pairs": 42,
+      "max_depth": 3
+    },
+    {
+      "name": "mesh_5",
+      "label": "Mesh (5 agents)",
+      "terminal_trust": 0.880321,
+      "path_length": 1,
+      "mean_pair_trust": 0.854623,
+      "std_pair_trust": 0.063241,
+      "reachable_pairs": 20,
+      "total_pairs": 20,
+      "max_depth": 1
+    },
+    {
+      "name": "mesh_7",
+      "label": "Mesh (7 agents)",
+      "terminal_trust": 0.863452,
+      "path_length": 1,
+      "mean_pair_trust": 0.841276,
+      "std_pair_trust": 0.071508,
+      "reachable_pairs": 42,
+      "total_pairs": 42,
+      "max_depth": 1
+    }
+  ]
+}

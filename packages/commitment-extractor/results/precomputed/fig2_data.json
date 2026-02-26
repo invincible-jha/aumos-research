@@ -1,0 +1,59 @@
+{
+  "experiment": "exp2_classification_accuracy",
+  "description": "Commitment classification accuracy on synthetic evaluation dataset. SIMULATION ONLY — rule-based, seed=42.",
+  "x": ["mixed_types", "fulfillment_tracking", "expired_commitment", "deadline_commitment"],
+  "x_label": "scenario",
+  "y_label": "score",
+  "per_scenario_metrics": [
+    {
+      "name": "mixed_types",
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "true_positives": 3,
+      "false_positives": 0,
+      "false_negatives": 0
+    },
+    {
+      "name": "fulfillment_tracking",
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "true_positives": 2,
+      "false_positives": 0,
+      "false_negatives": 0
+    },
+    {
+      "name": "expired_commitment",
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "true_positives": 1,
+      "false_positives": 0,
+      "false_negatives": 0
+    },
+    {
+      "name": "deadline_commitment",
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "true_positives": 1,
+      "false_positives": 0,
+      "false_negatives": 0
+    }
+  ],
+  "aggregate": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1_score": 1.0
+  },
+  "type_breakdown": [
+    {"type": "promise", "precision": 1.0, "recall": 1.0, "true_positives": 7, "false_positives": 0, "false_negatives": 0},
+    {"type": "obligation", "precision": 1.0, "recall": 1.0, "true_positives": 2, "false_positives": 0, "false_negatives": 0},
+    {"type": "deadline", "precision": 0.0, "recall": 0.0, "true_positives": 0, "false_positives": 0, "false_negatives": 0},
+    {"type": "conditional", "precision": 1.0, "recall": 1.0, "true_positives": 1, "false_positives": 0, "false_negatives": 0},
+    {"type": "offer", "precision": 1.0, "recall": 1.0, "true_positives": 1, "false_positives": 0, "false_negatives": 0}
+  ],
+  "reclassification_rate": 0.0,
+  "total_commitments_evaluated": 12
+}

@@ -1,0 +1,30 @@
+{
+  "experiment": "exp3_adversarial_delegation",
+  "description": "Adversarial agent impact by chain position. SIMULATION ONLY — synthetic data, seed=42.",
+  "chain_lengths": [3, 5, 7, 9],
+  "baseline_trusts": [0.81, 0.6561, 0.531441, 0.430467],
+  "compliant_trust": 0.9,
+  "adversarial_trust": 0.2,
+  "adversarial_by_length": {
+    "3": {
+      "positions": [1, 2],
+      "terminal_trusts": [0.18, 0.162],
+      "baseline_trust": 0.81
+    },
+    "5": {
+      "positions": [1, 2, 3, 4],
+      "terminal_trusts": [0.14580, 0.14580, 0.14580, 0.14580],
+      "baseline_trust": 0.6561
+    },
+    "7": {
+      "positions": [1, 2, 3, 4, 5, 6],
+      "terminal_trusts": [0.118098, 0.118098, 0.118098, 0.118098, 0.118098, 0.106288],
+      "baseline_trust": 0.531441
+    },
+    "9": {
+      "positions": [1, 2, 3, 4, 5, 6, 7, 8],
+      "terminal_trusts": [0.095720, 0.095720, 0.095720, 0.095720, 0.095720, 0.095720, 0.095720, 0.086148],
+      "baseline_trust": 0.430467
+    }
+  }
+}

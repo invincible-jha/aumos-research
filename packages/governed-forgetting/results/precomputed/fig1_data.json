@@ -1,0 +1,10 @@
+{
+  "_note": "SIMULATION ONLY — not production AMGP implementation. Run results/precomputed/generate.py to populate with seed=42 data.",
+  "scenario": "time_based_retention",
+  "seed": 42,
+  "ttl": 100,
+  "n_memories": 500,
+  "timesteps": 500,
+  "retention_rate": null,
+  "history": []
+}

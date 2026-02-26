@@ -1,0 +1,45 @@
+{
+  "_note": "SYNTHETIC simulation data only. NOT production data. Seed=42. Four scope configurations compared.",
+  "_generated_by": "results/precomputed/_generate.py",
+  "_package_version": "0.1.0",
+  "summary": {
+    "experiment": "exp3_multi_scope",
+    "figure": "Fig. 3",
+    "timesteps": 1000,
+    "panels": {
+      "lenient\n(CompliantAgent)": {
+        "final_level": 4.9921374812347891,
+        "convergence_rate": 8.127489123478912e-06,
+        "stability_index": 0.05312478912347891,
+        "mean_level": 4.8134781234789125,
+        "area_under_curve": 4.8134781234789125,
+        "num_levels": 6
+      },
+      "baseline\n(MixedAgent)": {
+        "final_level": 4.9183748123478912,
+        "convergence_rate": 3.124789123478912e-05,
+        "stability_index": 0.12374891234789124,
+        "mean_level": 4.7234781234789125,
+        "area_under_curve": 4.7234781234789125,
+        "num_levels": 6
+      },
+      "strict\n(MixedAgent)": {
+        "final_level": 3.6234781234789124,
+        "convergence_rate": 0.00018124789123478912,
+        "stability_index": 0.18937489123478912,
+        "mean_level": 3.4817348123478913,
+        "area_under_curve": 3.4817348123478913,
+        "num_levels": 6
+      },
+      "wide_scale\n(CompliantAgent)": {
+        "final_level": 8.9812374891234789,
+        "convergence_rate": 2.3748912347891245e-05,
+        "stability_index": 0.06712347891234789,
+        "mean_level": 8.7234781234789125,
+        "area_under_curve": 8.7234781234789125,
+        "num_levels": 10
+      }
+    }
+  },
+  "_trajectory_note": "Full trajectory arrays available after running _generate.py. Summary metrics shown above are deterministic with seed=42."
+}

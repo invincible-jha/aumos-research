@@ -1,0 +1,63 @@
+{
+  "_note": "RESEARCH TOOL — not production orchestration. Synthetic data for Papers 9/25 Figure 3.",
+  "_figure": "Fig 3 — Priority Ordering: ASP > ATP > AEAP denial dominance heatmap",
+  "experiment": "exp3_priority_ordering",
+  "priority_order": ["ASP", "ATP", "AEAP"],
+  "priority_semantics": "SAFETY (ASP) > COMPLIANCE (ATP) > EFFICIENCY (AEAP)",
+  "verification_result": {
+    "holds": true,
+    "property_name": "priority_ordering",
+    "states_checked": 27,
+    "counterexample": null,
+    "violating_protocol": null
+  },
+  "total_joint_states": 27,
+  "dominance_summary": {
+    "ASP":  12,
+    "ATP":  8,
+    "AEAP": 7,
+    "none": 0,
+    "description": "Count of joint states where the named protocol provides the highest-priority denial for at least one action. 'none' = joint states where every action is universally permitted by all protocols (no denial dominates)."
+  },
+  "permission_matrix_sample": {
+    "description": "Per-action permission in representative joint states (Y=permitted, N=denied).",
+    "columns": ["read", "write", "execute", "delete", "escalate"],
+    "rows": [
+      {
+        "joint": {"ATP": "low", "ASP": "normal", "AEAP": "available"},
+        "composed": ["Y", "Y", "N", "N", "N"],
+        "dominant_denier": "ATP"
+      },
+      {
+        "joint": {"ATP": "medium", "ASP": "normal", "AEAP": "available"},
+        "composed": ["Y", "Y", "Y", "N", "N"],
+        "dominant_denier": "ATP"
+      },
+      {
+        "joint": {"ATP": "high", "ASP": "normal", "AEAP": "available"},
+        "composed": ["Y", "Y", "Y", "Y", "N"],
+        "dominant_denier": "ASP"
+      },
+      {
+        "joint": {"ATP": "high", "ASP": "elevated", "AEAP": "available"},
+        "composed": ["Y", "N", "N", "N", "N"],
+        "dominant_denier": "ASP"
+      },
+      {
+        "joint": {"ATP": "high", "ASP": "lockdown", "AEAP": "available"},
+        "composed": ["N", "N", "N", "N", "N"],
+        "dominant_denier": "ASP"
+      },
+      {
+        "joint": {"ATP": "high", "ASP": "normal", "AEAP": "warning"},
+        "composed": ["Y", "N", "Y", "N", "N"],
+        "dominant_denier": "AEAP"
+      },
+      {
+        "joint": {"ATP": "high", "ASP": "normal", "AEAP": "exhausted"},
+        "composed": ["Y", "N", "N", "N", "N"],
+        "dominant_denier": "AEAP"
+      }
+    ]
+  }
+}

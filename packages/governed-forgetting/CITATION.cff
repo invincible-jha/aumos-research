@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the associated paper."
+title: "Governed Forgetting: Formal Verification of Memory Retention Policies"
+authors:
+  - family-names: "MuVeraAI Research"
+type: software
+license: MIT
+repository-code: "https://github.com/aumos-ai/aumos-research"
+abstract: >
+  Research companion code for Paper 5 on memory retention policy verification.
+  SIMULATION ONLY — not production AMGP implementation.
+  Provides simplified retention simulation and formal property checking
+  for academic analysis of governance-controlled memory lifecycle policies.
+keywords:
+  - memory retention
+  - governance
+  - forgetting
+  - simulation
+  - formal verification
+  - AI safety

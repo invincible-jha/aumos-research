@@ -1,0 +1,37 @@
+{
+  "_note": "RESEARCH TOOL — not production orchestration. Synthetic data for Papers 9/25 Figure 2.",
+  "_figure": "Fig 2 — Deadlock Freedom: standard vs broken composition",
+  "experiment": "exp2_deadlock_freedom",
+  "standard_composition": {
+    "protocols": ["ATP", "ASP", "AEAP"],
+    "holds": true,
+    "property_name": "deadlock_freedom",
+    "states_checked": 3,
+    "counterexample": null,
+    "violating_protocol": null,
+    "narrative": "The standard three-protocol composition is deadlock-free within the bounded reachable state space. From the initial joint state (ATP=low, ASP=normal, AEAP=available), the actions 'read' and 'write' are globally permitted, guaranteeing progress."
+  },
+  "broken_composition": {
+    "protocols": ["ATP", "BROKEN"],
+    "holds": false,
+    "property_name": "deadlock_freedom",
+    "states_checked": 1,
+    "counterexample": {
+      "states": {"ATP": "low", "BROKEN": "sink"},
+      "actions": []
+    },
+    "violating_protocol": null,
+    "narrative": "The BROKEN protocol denies all actions from its single 'sink' state. The initial joint state (ATP=low, BROKEN=sink) is immediately a deadlock: every action in the union alphabet is blocked by BROKEN. The verifier correctly identifies this at state index 0."
+  },
+  "reachable_states_breakdown": {
+    "ATP_ASP_AEAP": {
+      "description": "BFS from (low, normal, available). Only read/write advance state in initial configuration.",
+      "states": [
+        {"index": 0, "ATP": "low",    "ASP": "normal",   "AEAP": "available", "depth": 0, "deadlock": false},
+        {"index": 1, "ATP": "medium", "ASP": "normal",   "AEAP": "warning",   "depth": 1, "deadlock": false},
+        {"index": 2, "ATP": "low",    "ASP": "normal",   "AEAP": "warning",   "depth": 1, "deadlock": false}
+      ],
+      "total_reachable": 3
+    }
+  }
+}

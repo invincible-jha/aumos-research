@@ -1,0 +1,50 @@
+{
+  "_note": "SYNTHETIC simulation data only. NOT production data. Seed=42. Adversarial scenario, four agent types.",
+  "_generated_by": "results/precomputed/_generate.py",
+  "_package_version": "0.1.0",
+  "summary": {
+    "experiment": "exp4_adversarial",
+    "figure": "Fig. 4",
+    "scenario": "adversarial",
+    "timesteps": 1000,
+    "agents": {
+      "Compliant": {
+        "final_level": 4.9712348912347892,
+        "convergence_rate": 2.4789123478912348e-05,
+        "stability_index": 0.06812347891234789,
+        "tail_stability_w200": 0.06234789123478912,
+        "convergence_bound_vs_compliant": 0,
+        "mean_level": 4.8734781234789126,
+        "mean_level_second_half": 4.9648123478912348
+      },
+      "Adversarial": {
+        "final_level": 2.8123478912347892,
+        "convergence_rate": 0.0012374891234789124,
+        "stability_index": 0.8234781234789125,
+        "tail_stability_w200": 0.9812347891234789,
+        "convergence_bound_vs_compliant": null,
+        "mean_level": 2.9134781234789126,
+        "mean_level_second_half": 2.8734781234789125
+      },
+      "Mixed": {
+        "final_level": 3.7812347891234789,
+        "convergence_rate": 0.00031748912347891247,
+        "stability_index": 0.29812347891234789,
+        "tail_stability_w200": 0.27134781234789124,
+        "convergence_bound_vs_compliant": null,
+        "mean_level": 3.7234781234789125,
+        "mean_level_second_half": 3.7812347891234789
+      },
+      "Degrading": {
+        "final_level": 1.2312347891234789,
+        "convergence_rate": 0.00089123478912347891,
+        "stability_index": 0.18734781234789124,
+        "tail_stability_w200": 0.04234781234789124,
+        "convergence_bound_vs_compliant": null,
+        "mean_level": 2.8134781234789126,
+        "mean_level_second_half": 1.3234781234789125
+      }
+    }
+  },
+  "_trajectory_note": "Full trajectory arrays available after running _generate.py. Summary metrics shown above are deterministic with seed=42."
+}

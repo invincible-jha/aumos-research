@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the associated paper."
+title: "Protocol Composition Verification: Monotonic Restriction and Deadlock Freedom"
+authors:
+  - family-names: "MuVeraAI Research"
+type: software
+license: MIT
+version: 0.1.0
+date-released: "2026-02-26"
+abstract: >
+  Research companion code for Papers 9/25 on formal verification of
+  protocol composition properties. Implements bounded model checking
+  for monotonic restriction, deadlock freedom, and priority ordering
+  across composed governance protocol state machines.
+  NOTE: All models are simplified and synthetic. Not production software.
+keywords:
+  - formal-verification
+  - protocol-composition
+  - model-checking
+  - governance-protocols
+  - research
+repository-code: "https://github.com/muveraai/aumos-oss"

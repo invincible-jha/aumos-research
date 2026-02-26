@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the associated paper."
+title: "Economic Safety Verification: Properties of Agent Spending Envelopes"
+abstract: >
+  Research companion code for Paper 22. Provides a simplified simulation of
+  economic safety properties for agent spending envelope systems, including
+  no-overspend guarantees, commitment-bounded spending, and concurrent agent
+  safety. All data is synthetic. This is NOT a production implementation.
+authors:
+  - family-names: "MuVeraAI Research"
+type: software
+version: "0.1.0"
+date-released: "2026-02-26"
+license: MIT
+repository-code: "https://github.com/aumos-ai/aumos-research"
+url: "https://github.com/aumos-ai/aumos-research/tree/main/packages/economic-safety-verifier"
+keywords:
+  - economic safety
+  - budget envelopes
+  - agent spending
+  - formal verification
+  - simulation
+  - research
+  - multi-agent systems

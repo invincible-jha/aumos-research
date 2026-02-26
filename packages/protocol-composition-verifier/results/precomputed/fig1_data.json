@@ -1,0 +1,33 @@
+{
+  "_note": "RESEARCH TOOL — not production orchestration. Synthetic data for Papers 9/25 Figure 1.",
+  "_figure": "Fig 1 — Monotonic Restriction: permission set comparison across compositions",
+  "experiment": "exp1_monotonic_restriction",
+  "two_protocol_composition": {
+    "protocols": ["ATP", "ASP"],
+    "holds": true,
+    "property_name": "monotonic_restriction",
+    "states_checked": 9,
+    "counterexample": null,
+    "violating_protocol": null
+  },
+  "three_protocol_composition": {
+    "protocols": ["ATP", "ASP", "AEAP"],
+    "holds": true,
+    "property_name": "monotonic_restriction",
+    "states_checked": 27,
+    "counterexample": null,
+    "violating_protocol": null
+  },
+  "initial_permitted_single": {
+    "ATP":  ["read", "write"],
+    "ASP":  ["read", "write", "execute"],
+    "AEAP": ["read", "write", "execute", "delete"]
+  },
+  "initial_permitted_two": 2,
+  "initial_permitted_two_actions": ["read", "write"],
+  "initial_permitted_three": 2,
+  "initial_permitted_three_actions": ["read", "write"],
+  "most_permissive_name": "AEAP",
+  "most_permissive_permitted_transitions": 7,
+  "permission_reduction_narrative": "Composing ATP+ASP reduces the initial-state alphabet from 3 actions (ASP alone) to 2 (read, write). Adding AEAP does not reduce further from the initial state since AEAP also permits read and write from 'available'. Monotonic restriction holds: composition never exceeded any single-protocol permission in any joint state."
+}

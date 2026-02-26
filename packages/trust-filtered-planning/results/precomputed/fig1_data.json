@@ -1,0 +1,70 @@
+{
+  "experiment": "exp1_basic_planning",
+  "description": "Basic trust-filtered planning at trust_level=5. SIMULATION ONLY — forward BFS, synthetic data.",
+  "x": [
+    "linear_pipeline/lp-g1",
+    "linear_pipeline/lp-g2",
+    "branching/br-g1",
+    "branching/br-g2"
+  ],
+  "x_label": "domain/goal",
+  "y_label": "plan_length",
+  "plan_lengths": [4, 2, 2, 1],
+  "plan_costs": [5, 3, 3, 2],
+  "results_by_domain": [
+    {
+      "domain": "linear_pipeline",
+      "goals": [
+        {
+          "goal_id": "lp-g1",
+          "simple_length": 4,
+          "simple_cost": 5,
+          "filtered_length": 4,
+          "filtered_cost": 5,
+          "optimality_gap": 0.0,
+          "action_diversity": 1.0,
+          "reachable": true,
+          "plan_action_names": ["receive_input", "validate_strict", "transform_optimised", "review_automated", "deliver"]
+        },
+        {
+          "goal_id": "lp-g2",
+          "simple_length": 2,
+          "simple_cost": 3,
+          "filtered_length": 2,
+          "filtered_cost": 3,
+          "optimality_gap": 0.0,
+          "action_diversity": 1.0,
+          "reachable": true,
+          "plan_action_names": ["transform_optimised", "review_automated", "deliver"]
+        }
+      ]
+    },
+    {
+      "domain": "branching",
+      "goals": [
+        {
+          "goal_id": "br-g1",
+          "simple_length": 2,
+          "simple_cost": 3,
+          "filtered_length": 2,
+          "filtered_cost": 3,
+          "optimality_gap": 0.0,
+          "action_diversity": 1.0,
+          "reachable": true,
+          "plan_action_names": ["init_privileged", "direct_complete"]
+        },
+        {
+          "goal_id": "br-g2",
+          "simple_length": 1,
+          "simple_cost": 2,
+          "filtered_length": 1,
+          "filtered_cost": 2,
+          "optimality_gap": 0.0,
+          "action_diversity": 1.0,
+          "reachable": true,
+          "plan_action_names": ["finalise_optimised"]
+        }
+      ]
+    }
+  ]
+}

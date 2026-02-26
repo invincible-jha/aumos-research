@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the associated paper."
+title: "Trust-Filtered Planning: How Trust Levels Constrain Agent Planning and Action Selection"
+abstract: >
+  Research companion code for Paper 12. Provides a simplified simulation of
+  trust-filtered forward search planning, where agent action spaces are
+  constrained by assigned trust levels. Includes plan quality metrics under
+  trust constraints and comparative analysis across trust levels. All data is
+  synthetic. This is NOT a production implementation.
+authors:
+  - family-names: "MuVeraAI Research"
+type: software
+version: "0.1.0"
+date-released: "2026-02-26"
+license: MIT
+repository-code: "https://github.com/aumos-ai/aumos-research"
+url: "https://github.com/aumos-ai/aumos-research/tree/main/packages/trust-filtered-planning"
+keywords:
+  - trust-filtered planning
+  - action space constraints
+  - forward search
+  - plan quality
+  - simulation
+  - research
+  - agent governance

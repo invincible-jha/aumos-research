@@ -1,0 +1,101 @@
+{
+  "experiment": "exp4_conversation_analysis",
+  "description": "Full conversation analysis: density, type entropy, reclassification. SIMULATION ONLY — rule-based, synthetic data.",
+  "x": [
+    "simple_promise", "obligation_chain", "deadline_commitment",
+    "conditional_commitment", "offer_acceptance", "mixed_types",
+    "fulfillment_tracking", "expired_commitment", "no_commitments"
+  ],
+  "x_label": "scenario",
+  "commitment_densities": [0.5, 0.666667, 0.333333, 0.5, 0.5, 1.0, 0.5, 0.5, 0.0],
+  "type_entropies_bits": [0.0, 0.0, 0.0, 0.0, 0.0, 1.584963, 0.0, 0.0, 0.0],
+  "reclassification_rates": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+  "aggregate": {
+    "mean_density": 0.50000,
+    "mean_entropy_bits": 0.176107,
+    "scenarios_with_commitments": 8
+  },
+  "per_scenario": [
+    {
+      "name": "simple_promise",
+      "message_count": 2,
+      "commitment_count": 1,
+      "density": 0.5,
+      "type_entropy_bits": 0.0,
+      "reclassification_rate": 0.0,
+      "type_counts": {"promise": 1, "obligation": 0, "deadline": 0, "conditional": 0, "offer": 0}
+    },
+    {
+      "name": "obligation_chain",
+      "message_count": 3,
+      "commitment_count": 2,
+      "density": 0.666667,
+      "type_entropy_bits": 0.0,
+      "reclassification_rate": 0.0,
+      "type_counts": {"promise": 0, "obligation": 2, "deadline": 0, "conditional": 0, "offer": 0}
+    },
+    {
+      "name": "deadline_commitment",
+      "message_count": 3,
+      "commitment_count": 1,
+      "density": 0.333333,
+      "type_entropy_bits": 0.0,
+      "reclassification_rate": 0.0,
+      "type_counts": {"promise": 1, "obligation": 0, "deadline": 0, "conditional": 0, "offer": 0}
+    },
+    {
+      "name": "conditional_commitment",
+      "message_count": 2,
+      "commitment_count": 1,
+      "density": 0.5,
+      "type_entropy_bits": 0.0,
+      "reclassification_rate": 0.0,
+      "type_counts": {"promise": 0, "obligation": 0, "deadline": 0, "conditional": 1, "offer": 0}
+    },
+    {
+      "name": "offer_acceptance",
+      "message_count": 2,
+      "commitment_count": 1,
+      "density": 0.5,
+      "type_entropy_bits": 0.0,
+      "reclassification_rate": 0.0,
+      "type_counts": {"promise": 0, "obligation": 0, "deadline": 0, "conditional": 0, "offer": 1}
+    },
+    {
+      "name": "mixed_types",
+      "message_count": 3,
+      "commitment_count": 3,
+      "density": 1.0,
+      "type_entropy_bits": 1.584963,
+      "reclassification_rate": 0.0,
+      "type_counts": {"promise": 1, "obligation": 1, "deadline": 0, "conditional": 1, "offer": 0}
+    },
+    {
+      "name": "fulfillment_tracking",
+      "message_count": 4,
+      "commitment_count": 2,
+      "density": 0.5,
+      "type_entropy_bits": 0.0,
+      "reclassification_rate": 0.0,
+      "type_counts": {"promise": 2, "obligation": 0, "deadline": 0, "conditional": 0, "offer": 0}
+    },
+    {
+      "name": "expired_commitment",
+      "message_count": 2,
+      "commitment_count": 1,
+      "density": 0.5,
+      "type_entropy_bits": 0.0,
+      "reclassification_rate": 0.0,
+      "type_counts": {"promise": 1, "obligation": 0, "deadline": 0, "conditional": 0, "offer": 0}
+    },
+    {
+      "name": "no_commitments",
+      "message_count": 3,
+      "commitment_count": 0,
+      "density": 0.0,
+      "type_entropy_bits": 0.0,
+      "reclassification_rate": 0.0,
+      "type_counts": {"promise": 0, "obligation": 0, "deadline": 0, "conditional": 0, "offer": 0}
+    }
+  ]
+}

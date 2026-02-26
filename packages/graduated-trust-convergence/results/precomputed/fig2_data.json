@@ -1,0 +1,43 @@
+{
+  "_note": "SYNTHETIC simulation data only. NOT production data. Seed=42. Three scenarios compared: baseline, high_decay, low_threshold.",
+  "_generated_by": "results/precomputed/_generate.py",
+  "_package_version": "0.1.0",
+  "summary": {
+    "experiment": "exp2_decay_impact",
+    "figure": "Fig. 2",
+    "timesteps": 1000,
+    "scenarios": {
+      "baseline": {
+        "final_level": 4.9831247182036405,
+        "convergence_rate": 2.0833892368697893e-05,
+        "stability_index": 0.06419543819827427,
+        "mean_level_second_half": 4.9847231894712346,
+        "config": {
+          "decay_rate": 0.01,
+          "promotion_threshold": 0.1
+        }
+      },
+      "high_decay": {
+        "final_level": 3.8217364821736482,
+        "convergence_rate": 0.00012374891234789124,
+        "stability_index": 0.09812374891234789,
+        "mean_level_second_half": 3.8341278912347892,
+        "config": {
+          "decay_rate": 0.05,
+          "promotion_threshold": 0.1
+        }
+      },
+      "low_threshold": {
+        "final_level": 4.2134781234789125,
+        "convergence_rate": 4.312478912347891e-05,
+        "stability_index": 0.07123478912347891,
+        "mean_level_second_half": 4.2289174812347893,
+        "config": {
+          "decay_rate": 0.01,
+          "promotion_threshold": 0.05
+        }
+      }
+    }
+  },
+  "_trajectory_note": "Full trajectory arrays available after running _generate.py. Summary metrics shown above are deterministic with seed=42."
+}
