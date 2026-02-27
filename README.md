@@ -1,5 +1,7 @@
 # AumOS Research Companions
 
+[![Governance Score](https://img.shields.io/badge/governance-self--assessed-blue)](https://github.com/aumos-ai/aumos-research)
+
 Research companion code for AumOS governance protocol papers. Each package provides simulation code, experiment scripts, and pre-computed results for reproducing paper figures.
 
 ## Packages
