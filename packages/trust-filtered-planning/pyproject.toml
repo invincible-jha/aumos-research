@@ -3,7 +3,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "trust-filtered-planning"
+name = "aumos-research-trust-filtered-planning"
 version = "0.1.0"
 description = "Research companion for Paper 12: How trust levels constrain agent planning and action selection"
 readme = "README.md"

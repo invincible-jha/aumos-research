@@ -3,7 +3,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "delegation-trust-model"
+name = "aumos-research-delegation-trust-model"
 version = "0.1.0"
 description = "Research companion for Paper 18: Trust dynamics in agent delegation chains"
 readme = "README.md"

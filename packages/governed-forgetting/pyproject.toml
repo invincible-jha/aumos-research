@@ -3,7 +3,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "governed-forgetting"
+name = "aumos-research-governed-forgetting"
 version = "0.1.0"
 description = "Research companion for Paper 5: Memory retention policy verification"
 readme = "README.md"

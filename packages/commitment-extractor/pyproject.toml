@@ -3,7 +3,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "commitment-extractor"
+name = "aumos-research-commitment-extractor"
 version = "0.1.0"
 description = "Research companion for Paper 21: Extracting and tracking commitments from agent communications"
 readme = "README.md"

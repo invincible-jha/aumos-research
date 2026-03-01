@@ -3,7 +3,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "economic-safety-verifier"
+name = "aumos-research-economic-safety-verifier"
 version = "0.1.0"
 description = "Research companion for Paper 22: Economic safety property verification"
 readme = "README.md"

@@ -3,7 +3,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "protocol-composition-verifier"
+name = "aumos-research-protocol-composition-verifier"
 version = "0.1.0"
 description = "Research companion for Papers 9/25: Protocol composition formal properties"
 readme = "README.md"
@@ -41,7 +41,8 @@ dev = [
 ]
 
 [project.urls]
-Repository = "https://github.com/muveraai/aumos-oss"
+Repository = "https://github.com/aumos-ai/aumos-research"
+"Bug Tracker" = "https://github.com/aumos-ai/aumos-research/issues"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/composition_verifier"]
